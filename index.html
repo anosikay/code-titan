@@ -2,239 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <title>code-titan&#174;</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <title>Code Titan</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet">
   </head>
+
   <body>
-    <header class="head">
-      <div class="pt-5">
-        <h1 class="playwrite-pl pb-5">Code Titan .</h1>
-        <p>Code with me</p>
-      </div>
+    <div class="home-background">
+
+        <!-- for larger screens -->
+
+    <header class="header">
+      <a href="#" class="logo">Code-Titan.&#174;</a>
+      <nav class="navbar">
+        <a href="#" class="active hideOnMobile">Home</a>
+        <a href="./public/about.html" class=" hideOnMobile">About</a>
+        <a href="./public/services.html" class=" hideOnMobile">Services</a>
+        <a href="./public/portfolio.html" class=" hideOnMobile">Portfolio</a>
+        <a href="./public/contact.html" class=" hideOnMobile">Contact</a>
+        <a href="#" onclick="showSidebar()"  class="menu-button"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="26"
+          viewBox="0 -960 960 960"
+          width="26"
+          fill="#fff"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></a>
+      </nav>
     </header>
-    <!-- hero section -->
-    <section class="hero">
-      </div>
 
-      <div class="container my-5">
-        <div class="p-5 text-center rounded-3">
-          <img src="./assets/images/1671109936912.jpg" class="bi mt-4 mb-5 profile-pic" style="color: var(--bs-indigo);" width="200" height="200">
-          <h2 class="purple">Hello 😁👋</h2>
-          <p class="col-lg-8 mx-auto fs-5 text-muted">
-            I am Kenechukwu Anosike but you can call me kay kay , i build responsive mobile and web applications
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- for mobile devices -->
 
-    <!-- resume -->
-    <section class="resume">
-      <div class="container px-4 py-5" id="hanging-icons">
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="col d-flex align-items-start">
-            <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-            </svg>
-            </div>
-            <div>
-              <h3 class="fs-2  purple">Education</h3>
-              <p>
-                NNAMDI AZIKIWE UNIVERSITY <br />
-                Bachelor of Science in Computer science<br />
-                Expected Graduation: September 2024
-              </p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-            </svg>
-            </div>
-            <div>
-              <h3 class="fs-2 purple">Work Experience</h3>
-            <ul>
-              <li>
-                <h4>Sales Representative, Mac-Doris Investment L.T.D:</h4>
-                <p>March 2022 - September 2022</p>
-              </li>
-              <li>
-                <h4>Intern, Nigeria Internet Registration Association (NiRA):</h4>
-                <p>August 2023 - January 2024</p>
-              </li>
-            </ul>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <div
-              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-nut" viewBox="0 0 16 16">
-              <path d="m11.42 2 3.428 6-3.428 6H4.58L1.152 8 4.58 2zM4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1z"/>
-              <path d="M6.848 5.933a2.5 2.5 0 1 0 2.5 4.33 2.5 2.5 0 0 0-2.5-4.33m-1.78 3.915a3.5 3.5 0 1 1 6.061-3.5 3.5 3.5 0 0 1-6.062 3.5z"/>
-            </svg>
-            </div>
-            <div>
-              <h3 class="fs-2 purple">Skills</h3>
-              <p>
-                <ul>
-                  <li>
-                    Proficient in HTML and CSS, with experience in creating responsive and
-                    visually appealing web pages.
-                  </li>
-                  <li>Well-versed in Web3 technologies and blockchain concepts.</li>
-                  <li>Strong problem-solving and analytical skills.</li>
-                  <li>Experience with inventory management and cash transactions.</li>
-                  <li>Exceptional customer service skills.</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Recent Project -->
-     <section class="recent">
-      <hr class="mb-5"/>
-      <h2 class="container playwrite-pl px-5 purple"> My Recent Projects </h2>
-      <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h2 class="display-4 fw-bold lh-1 purple">Lagrande Labounat</h2>
-            <p class="lead">Lagrande Labounat is a simple hotel website designed to provide users with an immersive and user-friendly experience. Utilizing the versatile tools in Canva, I crafted a visually appealing  website that showcases the luxurious amenities and services offered by the hotel. The design emphasizes elegant visuals, intuitive navigation, and seamless user interface, ensuring that visitors can easily learn about the hotel's offerings.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <a class="btn btn-outline-secondary btn-lg px-5" href="https://lagrandelabounat.my.canva.site/">Visit</a>
-            </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-lg-3" src="./assets/images/lagrande.png" alt="lagrande website image" width="720">
-          </div>
-        </div>
-      </div>
-      <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h2 class="display-4 fw-bold lh-1 purple">Move-It</h2>
-            <p class="lead">Move-It is a comprehensive website for a shipping company, designed to streamline the logistics and shipping processes for users. The website is tailored to provide detailed information about the company's services, pricing, and tracking capabilities. With a focus on efficiency and user experience, Move-It offers customers an easy way to manage their shipping needs, from obtaining quotes to tracking shipments in real-time.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <a class="btn btn-outline-secondary btn-lg px-5" href="https://anosikay.github.io/move-it/">visit</a>
-            </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-lg-3" src="./assets/images/move-it.png" alt="move it website image" width="720">
-          </div>
-        </div>
-      </div>
-        <div class="px-4 pt-5 my-5 text-center border-bottom">
-          <h2 class="display-4 fw-bold purple">Tindog
-          </h2>
-          <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Tindog is an innovative startup idea, creating a unique dating platform specifically for dog owners and their furry friends. The website aims to connect dog lovers who are looking for companionship for both themselves and their pets. With a playful and engaging design, Tindog offers a fun and interactive user experience, allowing users to create profiles, browse potential matches, and arrange playdates for their dogs.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <a class="btn btn-outline-secondary btn-lg px-5" href="https://anosikay.github.io/Tindog">visit</a>
-            </div>
-          </div>
-          <div class="overflow-hidden" style="max-height: 30vh;">
-            <div class="container px-5">
-              <img src="./assets/images/tindog.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-            </div>
-          </div>
-        </div>
-     </section>
-
-    <!-- About me -->
-     <section class="about-me">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./assets/images/profilePic.jpeg"
-              class="d-block mx-lg-auto img-fluid profile-image"
-              alt="my profile picture"
-              width="400"
-              height="200"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h2 class="purple lh-1 mb-3">
-              About Me
-            </h2>
-            <p class="lead">
-              Motivated computer science student with practical experience gained from a
-              six month Student Industrial Work Experience Scheme (SIWES) internship at
-              Nigeria Internet Registration Association (NiRA). well-versed in web3
-              technologies and proficient in HTML. Seeking opportunities to apply and
-              expand technical skills in web development and contribute to cutting-edge
-              innovations.
+    <aside>
+      <nav class="side-bar">
+        <a href="#" onclick="hideSidebar()">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+                fill="#fff"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+        <a href="#" class="active">Home</a>
+        <a href="./public/about.html">About</a>
+        <a href="./public/services.html">Services</a>
+        <a href="./public/portfolio.html">Portfolio</a>
+        <a href="./public/contact.html">Contact</a>
+      </nav>
+    </aside>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Kenechukwu Anosike</h1>
+            <h3>Frontend Developer</h3>
+            <p>
+                I specialize in creating beautiful, responsive, and user-friendly websites. With a keen eye for detail and a passion for coding, I bring ideas to life through innovative design and seamless functionality. I am constantly learning and adapting to new technologies to ensure the best user experience and to stay ahead in the ever-evolving world of web development.
             </p>
-          </div>
+            
+            <div class="btn-box">
+                <a href="./public/contact.html">Hire Me
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/2349022665965?text=Hello%20Kenechukwu,%20I%20found%20you%20through%20your%20portfolio%20website" target="_blank">
+                    Let's Talk   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="margin-left: 4px;">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>    
+                </a>
+            </div>
         </div>
-      </div>
-     </section>
-
-
-    <!-- footer -->
-    <section class="footer">
-      <div class="container">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-6 col-md-6 mb-3">
-              <h5>Contact</h5>
-              <p>
-                <strong>Address:</strong> Room 32 , Itonic lodge , Ifite-Unizik , Awka ,
-                Anambra<br />
-                <strong>Phone: </strong>+234 9022665965<br />
-              </p>
-              </ul>
-            </div>
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Contact us via Email </h5>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-dark" type="button">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>© 2024 Code Titan, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-body-emphasis" href="https://x.com/anosikay_/"><img src="./assets/images/twitter-x.svg" alt="twitter-x icon" height="24"></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/anosikay/"><img src="./assets/images/instagram.svg" alt="instagram icon" height="24"></a></li>
-              <li class="ms-3"><a class="link-body-emphasis" href="https://web.facebook.com/profile.php?id=100078187435549"><img src="./assets/images/facebook.svg" alt="facebook icon" height="24"></a></li>
-            </ul>
-          </div>
-        </footer>
-      </div>
+        <div class="home-sci">
+            <a href="#">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentcolor' width='24' height='24'>
+                    <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentcolor' width='24' height='24'>
+                    <circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                </svg>
+            </a>
+        </div>
+        <span class="home-imgHover"></span>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
